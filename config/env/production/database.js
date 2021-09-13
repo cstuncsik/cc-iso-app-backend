@@ -7,9 +7,9 @@ module.exports = ({ env }) => ({
         host: env('PROD_DATABASE_HOST', '127.0.0.1'),
         srv: env.bool('PROD_DATABASE_SRV', true),
         port: env.int('PROD_DATABASE_PORT', 27017),
-        database: env('PROD_DATABASE_NAME', 'cc-iso-db'),
-        username: env('PROD_DATABASE_USERNAME', null),
-        password: env('PROD_DATABASE_PASSWORD', null),
+        database: env('PROD_DATABASE_NAME'),
+        username: env('PROD_DATABASE_USERNAME'),
+        password: env('PROD_DATABASE_PASSWORD'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
