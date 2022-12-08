@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "deploy": "pm2 deploy ecosystem.config.js production update",
+    "predeploy": "dotenv -- cross-var scp .env %HOST_SERVER%:%HOST_PATH%/current/.env"
   },
   "devDependencies": {},
   "dependencies": {
@@ -15,7 +17,10 @@
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/provider-upload-cloudinary": "^4.5.3",
     "@strapi/strapi": "4.5.3",
-    "better-sqlite3": "7.4.6"
+    "better-sqlite3": "7.4.6",
+    "cross-var": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^6.0.0"
   },
   "author": {
     "name": "A Strapi developer"
