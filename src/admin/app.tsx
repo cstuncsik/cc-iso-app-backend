@@ -34,6 +34,15 @@ export default {
           primary600: '#1c6cd2',
           primary700: '#00bbf4'
         }
+      },
+      light: {
+        colors: {
+          buttonPrimary500: '#1c6cd2',
+          buttonPrimary600: '#00bbf4',
+          primary500: '#1c6cd2',
+          primary600: '#00bbf4',
+          primary700: '#1c6cd2'
+        }
       }
     }
   },
