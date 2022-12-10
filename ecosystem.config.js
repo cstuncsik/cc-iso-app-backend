@@ -12,7 +12,7 @@ module.exports = {
       script: 'npm',
       args: 'start',
       exec_mode: 'cluster_mode',
-      instances: '2',
+      instances: '1',
       autorestart: true,
       watch: false,
       max_memory_restart: '300M',

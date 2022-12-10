@@ -7,9 +7,9 @@ export default {
     translations: {
       en: {
         "Auth.form.welcome.title": "Clearlake Consulting",
-        "Auth.form.welcome.subtitle": "Log in to your App",
+        "Auth.form.welcome.subtitle": "Contract register",
         'app.components.LeftMenu.navbrand.title': 'Clearlake Consulting',
-        'app.components.LeftMenu.navbrand.workplace': 'Dashboard',
+        'app.components.LeftMenu.navbrand.workplace': 'Contract register',
       },
     },
     head: {
